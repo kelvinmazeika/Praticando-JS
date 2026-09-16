@@ -155,9 +155,178 @@
 
 // toLowerCase toUpperCase
 
-let nome = "KELVIN";
-let cargo = "estudante";
+// let nome = "KELVIN";
+// let cargo = "estudante";
 
-console.log(nome.toLowerCase());
-console.log(cargo.toUpperCase());
+// console.log(nome.toLowerCase());
+// console.log(cargo.toUpperCase());
 
+
+// FOREACH
+// let nomes = ["Guilherme", "João", "Maria"];
+
+// nomes.forEach(nome => console.log(nome));
+
+
+// SOME
+// Verifica se pelo menos um item atende a condição
+
+// let numeros = [1, 3, 5, 8];
+// let temPar = numeros.some(num => num % 2 === 0);
+// console.log(temPar);
+
+
+// EVERY
+// Verifica se todos os itens atendem a condição
+
+// let numeros = [10, 2, 4, 8];
+// let temPar = numeros.every(num => num % 2 === 0);
+// console.log(temPar);
+
+
+// SORT
+// Ordena os elementos do array
+
+// let numeros = [3, 14, 41, 64, 1];
+// let letras = ["c", "a", "x", "h"];
+
+// console.log(letras.sort());
+
+// console.log(numeros.sort((a, b) => a - b));
+
+
+//  REVERSE
+// Inverte a ordem dos elementos no array
+
+// let numeros = [1, 2, 3];
+
+// numeros.reverse();
+// console.log(numeros);
+
+
+//  JOIN
+// Junta os elementos de uma array em uma string
+// let palavras = ["JS", "é", "top"];
+
+// console.log(palavras.join(" "));
+
+
+//  ADICIONANDO E REMOVENDO ELEMENTOS DO ARRAY
+// PUSH
+// POP
+// SHIFT
+// UNSHIFT
+
+// let lista = ["A", "B"];
+
+// // PUSH ADICIONA ELEMENTOS NO FINAL DA ARRAY
+// lista.push("C");
+// console.log(lista);
+
+// // POP REMOVE O ELEMENTO NO FINAL DA ARRAY
+// lista.pop();
+// console.log(lista);
+
+// // SHIFT REMOVE ELEMENTOS NO COMEÇO DA ARRAY
+// lista.shift();
+// console.log(lista);
+
+// // UNSHIFT ADICIONA ELEMENTOS NO COMEÇO DA ARRAY
+// lista.unshift("A");
+// console.log(lista);
+
+
+// SLICE
+// Cria uma copia de uma parte da lista
+
+/*
+array.slice(inicial, final)
+
+inicial onde começa
+final onde termina(não inclui a posição/index)
+*/
+
+// let numeros = [1, 2, 3, 4];
+
+// let parte = numeros.slice(1, 3);
+// console.log(parte);
+
+
+// SPLICE
+// Remove ou adiciona elementos em QUALQUER posição
+
+
+// removendo elementos sem adicionar
+// let numeros = [1, 2, 3, 4];
+// numeros.splice(2, 2);
+// console.log(numeros);
+
+// // removendo elementos e adicionando mais dois elementos
+// let frutas = ["Banana", "Laranja", "Maçã", "Manga"];
+
+// frutas.splice(0, 3, "Limão", "Kiwi");
+// console.log(frutas);
+
+// let frutas2 = ["Banana", "Laranja", "Maçã", "Manga"];
+
+// frutas2.splice(2, 0, "Limão", "Kiwi");
+// console.log(frutas2);
+
+
+// REPLACE
+// substitui uma parte da string
+
+/*
+    replace(valorProcurado, "valorQueSubstitui")
+*/
+
+// let texto = "Olá, mundo!"
+
+// let novoTexto = texto.replace("mundo", "cliente");
+// console.log(novoTexto);
+
+// NOSSAS FUNÇÕES
+
+// função comum
+// function exibirMensagem() {
+//     console.log("Bem vindo(a)!");
+// }
+// exibirMensagem();
+
+// função com parâmetros
+// function cumprimentar(nome) {
+//     console.log(`Olá, ${nome}`);
+// }
+// cumprimentar("Nego Ney");
+
+// função com mais de um parâmetro
+// function somar(n1, n2) {
+//     let soma = n1 + n2;
+//     console.log(soma);
+// }
+// somar(1, 4);
+
+// const somar = (n1, n2) => n1 + n2;
+// console.log(somar(1, 2));
+
+
+// PROMPT
+// recebe/solicita uma informação do usuário
+// o valor recebido pelo promt() normalmente é string
+
+// let nome = prompt("Digite o seu nome: ")
+// console.log(nome);
+
+// recebendo um número e convertendo
+
+// Number() genérico
+// let idade = Number(prompt("Digite sua idade: "));
+// console.log(idade);
+
+// ParseInt() converte o valor para um número inteiro
+// let idade = parseInt(prompt("Digite sua idade: "));
+// console.log(idade);
+
+// ParseFloat() converte o valor para um float
+// let idade = parseFloat(prompt("Digite sua idade: "));
+// console.log(idade);
